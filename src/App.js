@@ -1,6 +1,5 @@
 import {React, useState} from 'react';
-// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import { Page, Document } from 'react-pdf'; 
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import SelectSearch, { fuzzySearch }  from 'react-select-search';
 import 'react-select-search/style.css';
@@ -51,7 +50,7 @@ function App() {
       </div>
     <div className="pdf">
     <Document
-        file={samplePDF}
+        file={"https://www.dropbox.com/s/lwgszl6q64e155t/arrangement.pdf?dl=0"}
         renderMode='canvas'
         >
         <Page pageNumber={pageNumber}
