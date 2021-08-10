@@ -31,6 +31,10 @@
 .pdf {
   padding-top: 20px;
 }
+.pic {
+  width: 90vw;
+  height: auto;
+}
 
 .welcome-text {
   margin-bottom: 0px;

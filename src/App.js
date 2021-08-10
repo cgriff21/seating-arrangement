@@ -1,24 +1,24 @@
 import {React, useState} from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import SelectSearch, { fuzzySearch }  from 'react-select-search';
 import 'react-select-search/style.css';
-// import { useWindowWidth } from '@wojtekmaj/react-hooks';
 
 import './App.css';
+import arrangement from './misc/arrangement.jpg'
 
 // import samplePDF from './arrangement.pdf';
 import people from './misc/list.js';
 
 
 function App() {
-  const width = window.innerWidth;
+  // const width = window.innerWidth;
   
   const [value, setValue] = useState("");
   const [person, setPerson] = useState({})
 
 
-  const [pageNumber] = useState(1);
+  // const [pageNumber] = useState(1);
 
 
   function change(option){    
@@ -49,14 +49,15 @@ function App() {
         }
       </div>
     <div className="pdf">
-    <Document
+      <img  className="pic" src={arrangement} alt="seating chart" />
+    {/* <Document
         file={"https://www.dropbox.com/s/lwgszl6q64e155t/arrangement.pdf?dl=0"}
         renderMode='canvas'
         >
         <Page pageNumber={pageNumber}
          width={Math.min(width * 0.9)}
          />
-      </Document>
+      </Document> */}
          </div>
       </header>
     </div>
