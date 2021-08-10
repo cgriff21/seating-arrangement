@@ -7,7 +7,7 @@ import 'react-select-search/style.css';
 
 import './App.css';
 
-import samplePDF from './arrangement.pdf';
+// import samplePDF from './arrangement.pdf';
 import people from './misc/list.js';
 
 
