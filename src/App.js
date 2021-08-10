@@ -1,5 +1,7 @@
 import {React, useState} from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+// import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Page, Document } from 'react-pdf'; 
+
 import SelectSearch, { fuzzySearch }  from 'react-select-search';
 import 'react-select-search/style.css';
 // import { useWindowWidth } from '@wojtekmaj/react-hooks';
