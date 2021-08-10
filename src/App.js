@@ -17,13 +17,8 @@ function App() {
   const [person, setPerson] = useState({})
 
 
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber] = useState(1);
 
-
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
-    setNumPages(nextNumPages);
-  }
 
   function change(option){    
     setValue();
@@ -55,7 +50,6 @@ function App() {
     <div className="pdf">
     <Document
         file={samplePDF}
-        onLoadSuccess={onDocumentLoadSuccess}
         renderMode='canvas'
         >
         <Page pageNumber={pageNumber}
