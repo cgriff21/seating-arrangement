@@ -44,7 +44,7 @@ function App() {
           <div className="welcome-div">
             <p className="welcome-text-main">Welcome {person.name}! </p>
             <p className="welcome-text">You are seated at: </p>
-            <p className="welcome-text">Table {person.table}, Chair {person.chair} </p>
+            <p className="welcome-text">Table {person.table} </p>
           </div>
         }
       </div>
